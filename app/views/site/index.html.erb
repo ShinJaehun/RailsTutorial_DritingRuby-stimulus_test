@@ -22,3 +22,12 @@
     CLICK ME</button>
     <button data-action="styling#clicked:once">CLICK ONCE</button>
 </div>
+<!-- <div data-controller="text-count"
+data-text-count-limited-character-count-value=30> -->
+<div data-controller="text-count"
+data-text-count-limited-character-count-value=30
+data-text-count-over-limit-class="text-danger">
+    <input type="text" data-text-count-target="field"
+    data-action="keyup->text-count#change">
+    <div data-text-count-target="output"></div>
+</div>
