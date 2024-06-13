@@ -1,0 +1,24 @@
+<h1>Site#index</h1>
+<p>Find me in app/views/site/index.html.erb</p>
+
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+<div data-controller="hello">
+</div>
+
+<div data-controller="site" data-site-number-value=4>
+    <h1 data-site-target="output"></h1>
+    <button data-action="site#clicked">CLICK ME</button>
+</div>
+
+<div data-controller="text-input">
+    <input type="text" data-action="text-input#changed" data-text-input-target="input">
+    <h1 data-text-input-target="output"></h1>
+</div>
+
+<div data-controller="styling"
+    data-styling-primary-class="btn-primary">
+    <button class="btn" data-styling-target="button" data-action="styling#clicked">
+    CLICK ME</button>
+    <button data-action="styling#clicked:once">CLICK ONCE</button>
+</div>
